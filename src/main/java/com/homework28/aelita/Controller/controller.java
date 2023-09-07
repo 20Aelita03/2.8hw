@@ -22,6 +22,7 @@ public class controller {
     @GetMapping(path = "/find")
     public Employee find(@RequestParam("firstName") String firstname, @RequestParam("secondName") String secondName) {
         return serviceN.find(firstname,secondName);
+
     }
     @GetMapping(path = "/add")
     public Employee add(@RequestParam("firstName") String firstname, @RequestParam("secondName") String secondName) throws EmployeeAlreadyAddedException {
