@@ -23,6 +23,7 @@ public class EmployeeService implements ServiceN {
         if (nums.contains(employee)) {
             throw new EmployeeAlreadyAddedException("Сотрудник уже существует");
         }
+
         if (nums.size() < maxEmployee) {
             nums.add(employee);
             return employee;
