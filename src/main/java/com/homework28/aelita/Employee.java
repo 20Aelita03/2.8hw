@@ -5,7 +5,8 @@ import java.util.Objects;
 public class Employee {
     private final String firstName;
 
-
+public String getFullName(){
+    return firstName + " " + secondName;}
     private final String secondName;
 
 
